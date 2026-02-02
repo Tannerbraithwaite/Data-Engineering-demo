@@ -27,8 +27,12 @@ db-capstone-project/
 ├── task1_getmaxquantity.sql        # Procedure Task 1: GetMaxQuantity stored procedure
 ├── task2_getorderdetail.sql        # Procedure Task 2: GetOrderDetail prepared statement
 ├── task3_cancelorder.sql           # Procedure Task 3: CancelOrder stored procedure
+├── task1_insert_bookings.sql      # Booking Task 1: Insert booking records
+├── task2_checkbooking.sql          # Booking Task 2: CheckBooking stored procedure
+├── task3_addvalidbooking.sql       # Booking Task 3: AddValidBooking with transaction
 ├── QUERIES_README.md               # Documentation for query tasks
 ├── PROCEDURES_README.md            # Documentation for stored procedures and prepared statements
+├── BOOKINGS_README.md               # Documentation for booking management tasks
 ├── schema_adjustment.sql           # Optional schema adjustments
 └── (LittleLemonDM.png)            # ER Diagram visual export (to be created in MySQL Workbench)
 ```
@@ -228,6 +232,30 @@ Additional optimization tasks using stored procedures and prepared statements:
 - See `task3_cancelorder.sql` and `PROCEDURES_README.md`
 
 For detailed procedures documentation, see `PROCEDURES_README.md`.
+
+### Booking Management Tasks
+
+Additional tasks for managing table bookings with transactions:
+
+### Booking Task 1: Insert Booking Records ✅
+- Populated Bookings table with sample booking records
+- Includes verification queries
+- See `task1_insert_bookings.sql` and `BOOKINGS_README.md`
+
+### Booking Task 2: CheckBooking Procedure ✅
+- Created stored procedure to check table availability
+- Accepts booking date and table number as parameters
+- Returns clear status message
+- See `task2_checkbooking.sql` and `BOOKINGS_README.md`
+
+### Booking Task 3: AddValidBooking Procedure ✅
+- Created stored procedure with transaction support
+- Validates table availability before booking
+- Automatically rolls back if table is already booked
+- Prevents double-booking with integrity checks
+- See `task3_addvalidbooking.sql` and `BOOKINGS_README.md`
+
+For detailed booking management documentation, see `BOOKINGS_README.md`.
 
 ## Next Steps
 
