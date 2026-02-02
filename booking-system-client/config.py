@@ -5,7 +5,7 @@ DB_CONFIG = {
     'user': 'littlelemon_admin',  # Change to your MySQL username
     'password': 'SecurePassword123!@#',  # Change to your MySQL password
     'host': 'localhost',  # Change if MySQL is on a different host
-    'database': 'LittleLemonDB',  # Database name
+    'db': 'LittleLemonDB',  # Database name (using 'db' parameter)
     'port': 3306  # Default MySQL port
 }
 
@@ -21,7 +21,7 @@ DB_CONFIG = {
     'user': os.getenv('DB_USER', 'littlelemon_admin'),
     'password': os.getenv('DB_PASSWORD', ''),
     'host': os.getenv('DB_HOST', 'localhost'),
-    'database': os.getenv('DB_NAME', 'LittleLemonDB'),
+    'db': os.getenv('DB_NAME', 'LittleLemonDB'),  # Using 'db' parameter
     'port': int(os.getenv('DB_PORT', 3306))
 }
 """
