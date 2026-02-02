@@ -21,9 +21,14 @@ db-capstone-project/
 ├── LittleLemonDB.sql              # Task 2: Complete database schema (forward engineered)
 ├── task3_show_databases.sql       # Task 3: SQL to show all databases
 ├── QUERIES_README.md              # Documentation for query tasks
-├── task1_orders_view.sql          # Task 1: Create virtual table (VIEW)
-├── task2_join_query.sql           # Task 2: JOIN query for orders > $150
-├── task3_subquery.sql             # Task 3: Subquery with ANY operator
+├── task1_orders_view.sql          # Query Task 1: Create virtual table (VIEW)
+├── task2_join_query.sql           # Query Task 2: JOIN query for orders > $150
+├── task3_subquery.sql             # Query Task 3: Subquery with ANY operator
+├── task1_getmaxquantity.sql        # Procedure Task 1: GetMaxQuantity stored procedure
+├── task2_getorderdetail.sql        # Procedure Task 2: GetOrderDetail prepared statement
+├── task3_cancelorder.sql           # Procedure Task 3: CancelOrder stored procedure
+├── QUERIES_README.md               # Documentation for query tasks
+├── PROCEDURES_README.md            # Documentation for stored procedures and prepared statements
 ├── schema_adjustment.sql           # Optional schema adjustments
 └── (LittleLemonDM.png)            # ER Diagram visual export (to be created in MySQL Workbench)
 ```
@@ -201,6 +206,28 @@ Additional SQL query tasks have been completed:
 - See `task3_subquery.sql` and `QUERIES_README.md`
 
 For detailed query documentation, see `QUERIES_README.md`.
+
+### Stored Procedures and Prepared Statements Tasks
+
+Additional optimization tasks using stored procedures and prepared statements:
+
+### Procedure Task 1: GetMaxQuantity ✅
+- Created stored procedure to display maximum ordered quantity
+- Reusable logic without retyping code
+- See `task1_getmaxquantity.sql` and `PROCEDURES_README.md`
+
+### Procedure Task 2: GetOrderDetail ✅
+- Created prepared statement that accepts CustomerID
+- Returns order id, quantity, and order cost
+- Reduces parsing time and secures against SQL injection
+- See `task2_getorderdetail.sql` and `PROCEDURES_README.md`
+
+### Procedure Task 3: CancelOrder ✅
+- Created stored procedure to delete order by order ID
+- Includes transaction handling and confirmation messages
+- See `task3_cancelorder.sql` and `PROCEDURES_README.md`
+
+For detailed procedures documentation, see `PROCEDURES_README.md`.
 
 ## Next Steps
 
