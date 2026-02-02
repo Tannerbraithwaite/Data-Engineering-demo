@@ -20,6 +20,11 @@ db-capstone-project/
 ├── ER_DIAGRAM_DESIGN.md           # Task 1: ER Diagram design documentation
 ├── LittleLemonDB.sql              # Task 2: Complete database schema (forward engineered)
 ├── task3_show_databases.sql       # Task 3: SQL to show all databases
+├── QUERIES_README.md              # Documentation for query tasks
+├── task1_orders_view.sql          # Task 1: Create virtual table (VIEW)
+├── task2_join_query.sql           # Task 2: JOIN query for orders > $150
+├── task3_subquery.sql             # Task 3: Subquery with ANY operator
+├── schema_adjustment.sql           # Optional schema adjustments
 └── (LittleLemonDM.png)            # ER Diagram visual export (to be created in MySQL Workbench)
 ```
 
@@ -175,6 +180,28 @@ ORDER BY ItemType, ItemName;
 - ✅ Timestamps for audit trail
 - ✅ Sample data included
 
+## Query Tasks
+
+Additional SQL query tasks have been completed:
+
+### Query Task 1: Virtual Table (VIEW) ✅
+- Created `OrdersView` virtual table
+- Shows OrderID, Quantity, and Cost for orders with quantity > 2
+- See `task1_orders_view.sql` and `QUERIES_README.md`
+
+### Query Task 2: JOIN Query ✅
+- Extracts data from 4 tables (Customers, Orders, Menus, MenuItems)
+- Filters customers with orders > $150
+- Sorted by lowest cost
+- See `task2_join_query.sql` and `QUERIES_README.md`
+
+### Query Task 3: Subquery with ANY ✅
+- Finds menu items with more than 2 orders
+- Uses subquery with ANY operator
+- See `task3_subquery.sql` and `QUERIES_README.md`
+
+For detailed query documentation, see `QUERIES_README.md`.
+
 ## Next Steps
 
 After implementing the database, you can:
@@ -184,6 +211,7 @@ After implementing the database, you can:
 4. Set up triggers for automated tasks
 5. Implement backup and recovery procedures
 6. Add user roles and permissions
+7. Run the query tasks to generate reports
 
 ## Notes
 
