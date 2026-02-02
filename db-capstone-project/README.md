@@ -30,9 +30,13 @@ db-capstone-project/
 ├── task1_insert_bookings.sql      # Booking Task 1: Insert booking records
 ├── task2_checkbooking.sql          # Booking Task 2: CheckBooking stored procedure
 ├── task3_addvalidbooking.sql       # Booking Task 3: AddValidBooking with transaction
+├── task1_addbooking.sql            # Booking Management Task 1: AddBooking procedure
+├── task2_updatebooking.sql         # Booking Management Task 2: UpdateBooking procedure
+├── task3_cancelbooking.sql         # Booking Management Task 3: CancelBooking procedure
 ├── QUERIES_README.md               # Documentation for query tasks
 ├── PROCEDURES_README.md            # Documentation for stored procedures and prepared statements
-├── BOOKINGS_README.md               # Documentation for booking management tasks
+├── BOOKINGS_README.md              # Documentation for booking management tasks
+├── BOOKING_MANAGEMENT_README.md    # Documentation for booking CRUD procedures
 ├── schema_adjustment.sql           # Optional schema adjustments
 └── (LittleLemonDM.png)            # ER Diagram visual export (to be created in MySQL Workbench)
 ```
@@ -256,6 +260,30 @@ Additional tasks for managing table bookings with transactions:
 - See `task3_addvalidbooking.sql` and `BOOKINGS_README.md`
 
 For detailed booking management documentation, see `BOOKINGS_README.md`.
+
+### Booking CRUD Procedures
+
+Additional stored procedures for managing bookings (add, update, delete):
+
+### Booking Management Task 1: AddBooking Procedure ✅
+- Created stored procedure to add new booking records
+- Accepts booking id, customer id, booking date, and table number
+- Returns confirmation message
+- See `task1_addbooking.sql` and `BOOKING_MANAGEMENT_README.md`
+
+### Booking Management Task 2: UpdateBooking Procedure ✅
+- Created stored procedure to update existing bookings
+- Accepts booking id and new booking date
+- Includes UPDATE statement and confirmation message
+- See `task2_updatebooking.sql` and `BOOKING_MANAGEMENT_README.md`
+
+### Booking Management Task 3: CancelBooking Procedure ✅
+- Created stored procedure to cancel/delete bookings
+- Accepts booking id as parameter
+- Includes DELETE statement and confirmation message
+- See `task3_cancelbooking.sql` and `BOOKING_MANAGEMENT_README.md`
+
+For detailed booking CRUD procedures documentation, see `BOOKING_MANAGEMENT_README.md`.
 
 ## Next Steps
 
