@@ -1,0 +1,12 @@
+# Little Lemon Booking System - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Jupyter Notebook
+jupyter>=1.0.0
+
+# MySQL Connector for Python
+mysql-connector-python>=8.0.33
+
+# Optional: Additional useful packages
+pandas>=2.0.0
+python-dotenv>=1.0.0
